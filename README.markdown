@@ -1,11 +1,13 @@
-# mootools.form2js
+# form2js
 _Convenient way to collect **structured** form data into JavaScript object._
 
 Example: http://form2js.googlecode.com/hg/example/test.html
 
 If you have any questions/suggestions or find out something weird or illogical - feel free to post an issue.
 
-Because everythins is better with jQuery, jQuery plugin added, check out jquery.toObject.js =)
+_**NEW**_ MooTools version added, mootools.form2js.js
+
+**Warning!** Not supported. Because everythins is better with jQuery, jQuery plugin added, check out jquery.toObject.js =)
 
 **Warning!** form2object.js and form2object function renamed to form2js.js and form2js respectively. Old names are in v1.0 tag.
 
@@ -18,7 +20,16 @@ This is **not** a serialization library. Library used in example for JSON serial
 All this library doing is collecting form data and putting it in javascript object (obviously you can get JSON/XML/etc string by serializing it, but it's not an only purpose).
 
 ## Usage
+### Standard JS
     form2js(rootNode, delimiter, skipEmpty, nodeCallback, useIdIfEmptyName)
+### MooTools
+    var f2js = new form2js({rootNode: 'testForm'
+    	delimiter: '.', 
+    	skipEmpty: true,
+    	nodeCallback: null,
+    	useIdIfEmptyName: false,
+    	});
+    f2js.on();
 
 Values of all inputs under the _rootNode_ will be collected into one object (skipping empty inputs if _skipEmpty_ not false).
 
