@@ -18,7 +18,16 @@ This is **not** a serialization library. Library used in example for JSON serial
 All this library doing is collecting form data and putting it in javascript object (obviously you can get JSON/XML/etc string by serializing it, but it's not an only purpose).
 
 ## Usage
+### Standard JS
     form2js(rootNode, delimiter, skipEmpty, nodeCallback, useIdIfEmptyName)
+### MooTools
+    var f2js = new form2js({rootNode: 'testForm'
+    	delimiter: '.', 
+    	skipEmpty: true,
+    	nodeCallback: null,
+    	useIdIfEmptyName: false;
+    	});
+    f2js.on();
 
 Values of all inputs under the _rootNode_ will be collected into one object (skipping empty inputs if _skipEmpty_ not false).
 
