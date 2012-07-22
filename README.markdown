@@ -1,4 +1,4 @@
-# form2js
+# mootools.form2js
 _Convenient way to collect **structured** form data into JavaScript object._
 
 Example: http://form2js.googlecode.com/hg/example/test.html
