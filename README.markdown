@@ -5,7 +5,7 @@ Example: http://form2js.googlecode.com/hg/example/test.html
 
 If you have any questions/suggestions or find out something weird or illogical - feel free to post an issue.
 
-**NEW** MooTools version added, mootools.form2js.js
+_**NEW**_ MooTools version added, mootools.form2js.js
 
 **Warning!** Not supported. Because everythins is better with jQuery, jQuery plugin added, check out jquery.toObject.js =)
 
