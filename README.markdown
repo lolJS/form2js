@@ -27,7 +27,7 @@ All this library doing is collecting form data and putting it in javascript obje
     	delimiter: '.', 
     	skipEmpty: true,
     	nodeCallback: null,
-    	useIdIfEmptyName: false;
+    	useIdIfEmptyName: false,
     	});
     f2js.on();
 
