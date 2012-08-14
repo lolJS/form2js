@@ -31,7 +31,7 @@ options: {
 	skipEmpty: null,
 	nodeCallback: null,
 	useIdIfEmpty: null,
-	data: null,
+	data: null
 },
 useIdIfEmptyName: null,
 fieldValues: null,
@@ -127,7 +127,10 @@ _inputOrTextareaRegexp: /INPUT|TEXTAREA/i,
 						result[subFieldName] = subFields[subFieldName];
 					} else {
 						for (i = 0; i < subFields[subFieldName].length; i++) {
-							result[subFieldName].push(subFields[subFieldName][i]);
+							if (result[subFieldName].tagName == "SELECT")
+								result[subFieldName].add(subFields[subFieldName][i]);
+							else
+								result[subFieldName].push(subFields[subFieldName][i]);
 						}
 					}
 				}
