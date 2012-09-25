@@ -82,7 +82,7 @@ _inputOrTextareaRegexp: /INPUT|TEXTAREA/i,
 					field[i].checked = true;
 
 		} else if (this._inputOrTextareaRegexp.test(field.nodeName)) {
-			field.value = value;
+			field.value = (value == null) ? '' : value;
 
 		} else if (/SELECT/i.test(field.nodeName)) {
 			children = field.getElementsByTagName('option');
